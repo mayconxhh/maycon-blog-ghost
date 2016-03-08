@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_description}}" />
+	{{!-- icon  --}}
+	<link rel="icon" sizes="192x192" href=" {{asset "img/icon.png"}}" />
+	<link href='https://fonts.googleapis.com/css?family=Poppins:300,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{asset "css/style.min.css"}}">
+	<link rel="stylesheet" href="{{asset "css/style_about.css"}}">
+	{{ghost_head}}
+</head>
+<body>
+	<div class="landing">
+	{{>'header'}}
+	<section class="bio" style="background-image: url('{{asset "img/portafolio/background-header.jpeg"}}')">
+		<div class="animated bounceInDown">
+			<figure id="logo-grande">
+				<img src="{{asset "img/portafolio/avatar.jpg"}}" alt="Maycon Xavier Huayapa Huamán"/>
+			</figure>
+			<h1>
+				Maycon X. Huayapa Huaman
+			</h1>
+			<h2>
+				Frontend Web Developer, CTO en Cromlu, Blogger, <br>amante de los animales y la tecnología.	
+			</h2>		
+		</div>
+	</section>
+	<section class="secciones" id="yo">
+		<div id="caja1">
+			<div>
+				<h2>
+				Hola soy Maycon c:
+			</h2>
+			<p>
+				Front-End Web Developer, I love Technology, I like to learn and share what I know, estoy aprendiendo a hacer web de los mejores <a href="https://twitter.com/platzi?lang=es">@Platzi</a>, a la vez indagando en la web, creando sitios web mágicos.
+			</p>
+			</div>
+			<figure id="avatar">
+				<img src="{{asset "img/portafolio/avatar.jpg"}}" alt="Maycon Xavier Huayapa Huaman">
+			</figure>
+		</div>
+	</section>
+	<section class="secciones" id="preparacion">
+		<div id="texto">
+			<h2>
+				Mi Preparación
+			</h2>
+			<div>
+				<p>
+				He desarrollado mis habilidades usando las mejores tecnologías.
+			</p>
+			</div>
+		</div>
+		<article class="caja1">
+			<img src="{{asset "img/portafolio/html.png"}}" class="imag1"/>
+			<h3>
+				HTML5
+			</h3>
+			<p>
+				Estructura y maquetado.
+			</p>
+		</article>
+		<article class="caja1">
+			<img src="{{asset "img/portafolio/css3.png"}}" class="imag1"/>
+			<h3>
+				CSS3
+			</h3>
+			<p>
+				Estilos y animaciones.
+			</p>
+		</article>
+		<article class="caja1">
+			<img src="{{asset "img/portafolio/javascript.png"}}" class="imag1"/>
+			<h3>
+				JAVASCRIPT
+			</h3>
+			<p>
+				Lenguaje de programación.
+			</p>
+		</article>
+		<article class="caja1">
+			<img src="{{asset "img/portafolio/jquery.png"}}" class="imag1"/>
+			<h3>
+				JQUERY
+			</h3>
+			<p>
+				Animación e interacción.
+			</p>
+		</article>
+		<article class="caja1">
+			<img src="{{asset "img/portafolio/responsive.png"}}" class="imag1"/>
+			<h3>
+				Responsive Desing
+			</h3>
+			<p>
+				Adapta tu web a los diferentes dispotivos.
+			</p>
+		</article>			
+	</section>
+	<section class="secciones" id="portafolio">
+		<div id="texto">
+			<h2>
+				Mi Portafolio
+			</h2>
+			<div>
+				<p>
+				Aqui algunas cosas en las que he ido experimentando y agarrando experiencia.
+			</p>
+			</div>
+		</div>
+		<article class="pholio">
+			<h3>
+				Puls
+			</h3>
+			<div id="puls" style="background-image: url('{{asset "img/portafolio/proyectos/wall1.jpg"}}')
+			">
+				<a target="_blank" href="http://mayconxhh.github.io/puls2/">VER</a>
+			</div>
+		</article>
+		<article class="pholio">
+			<h3>
+				Devflix
+			</h3>
+			<div id="devflix" style="background-image: url('{{asset "img/portafolio/proyectos/2.jpg"}}')
+			">
+				<a target="_blank" href="http://mayconxhh.github.io/devflix">VER</a>
+			</div>
+		</article>
+		<article class="pholio">
+			<h3>
+				Paramore
+			</h3>
+			<div id="paramore" style="background-image: url('{{asset "img/portafolio/proyectos/3.jpg"}}')
+			">
+				<a target="_blank" href="http://mayconxhh.github.io/paramore/">VER</a>
+			</div>
+		</article>
+		<article class="pholio">
+			<h3>
+				Prueba de portafolio
+			</h3>
+			<div id="portafolio" style="background-image: url('{{asset "img/portafolio/proyectos/4.jpg"}}')
+			">
+				<a target="_blank" href="http://mayconxhh.github.io/prueba-de-portafolio/">VER</a>
+			</div>
+		</article>
+		<article class="pholio">
+			<h3>
+				Apipoke
+			</h3>
+			<div id="apipoke" style="background-image: url('{{asset "img/portafolio/proyectos/5.jpg"}}')
+			">
+				<a target="_blank" href="http://mayconxhh.github.io/apipoke/">VER</a>
+			</div>
+		</article>				
+	</section>
+	
+	{{>'footer'}}
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="{{asset "js/vendor.min.js"}}"></script>
+	<script src="{{asset "js/app.min.js"}}"></script>
+</body>
+</html>
