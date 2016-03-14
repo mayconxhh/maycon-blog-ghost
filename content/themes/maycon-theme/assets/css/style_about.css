@@ -9,94 +9,179 @@ h1, h2, h3, h4, h5, h6{
 p{
 	font-family: 'raleway', 'Arial','sans-serif';
 }
-#portafolio{
-	/*background: #68FF95;*/
-	height: auto;
-}
-#portafolio .pholio {
-	margin-top: 3em;
+.secciones{
+	padding: 3em 0;
 	text-align: center;
-	display: inline-block;
-	width: 31%;
-	padding: 0.6em;
 }
-#portafolio .pholio div{
+.portafolio{
 	height: auto;
-	width: 100%;
+	padding-bottom: 5em;
 }
-#portafolio .pholio div a{
-	background: rgba(1, 53, 142, 0.65);
-	line-height: 9;
-	padding: 0.2em 0.8em;
-	font-size: 2em;
-	text-decoration: none;
-	color: white;
+.item{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
-#portafolio .pholio div a:hover{
-	color: white;
-	background: rgba(228, 5, 5, 0.65);
+/*Estilos Base*/
+.item-img {
+	max-width: 400px;
+	max-height: 300px;
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #fff;
+    margin: .1em;
 }
-#portafolio .pholio h3{
-	font-size: 1.5em;
-	color: #353535;
-	margin: 0 0 0.2em 0;
+.item-img .mascara{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: -100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-#portafolio .pholio #puls, #portafolio .pholio #devflix, #portafolio .pholio #paramore, #portafolio .pholio #portafolio, #portafolio .pholio #apipoke{
-	background-size: 400px 300px;
-	background-repeat: no-repeat;
-	background-position: center;
+.item-img img {
+    display: block;
+    position: relative;
+   
 }
-#portafolio #texto{
-	margin: 0;
+.item-img h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 2.5em;
+    padding: 30px 0;
 }
-#portafolio #texto div{
-	margin: auto;
-	width: 1180px;
+/*.item-img p {    
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 10px;
+    text-align: center
+}*/
+.item-img a.link {
+    font-size: 1.2em;
+    margin: 0 auto 3.5em auto;
+    width: 150px;
+    border: 2px solid white;
+    /* display: block; */
+    text-decoration: none;
+    padding: 7px 14px;
+    /* background: #222; */
+    color: #fff;
+    text-transform: uppercase;
+    /* box-shadow: 0 0 1px #000; */
+}
+.item-img a.link:hover {
+    box-shadow: 0 0 5px #000;
+    text-decoration: underline;
+}
+        
+     
+/*Ejemplo 1*/
+.animation img { 
+    transition: all 0.2s linear;
+}
+.animation .mascara {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.25s cubic-bezier(0, 0.71, 1, 1);
+}
+.animation h2 {
+    /*transform: translateX(-200px);*/
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
+/*.animation p { 
+    transform: translateX(200px);
+    opacity: 0;
+	transition: all 0.4s linear;
+}*/
+.animation a.link{
+    opacity: 0;
+	transition: all 0.4s ease-in-out;
+    /*transform: translateY(100px)*/
+}
+/*.animation:hover img { 
+	transform: scale(1.15);
+} */
+.animation:hover .mascara { 
+    transform: translateY(100%);
+	opacity: 1;
+    /*opacity: .4;*/
+}
+.animation:hover h2,
+.animation:hover p,
+.animation:hover a.link {
+    opacity: 1;
+    /*transform: translateX(0px);*/
+}
+/*.animation:hover p {
+    transition-delay: 0.1s;
+}*/
+.animation:hover a.link {
+    transition-delay: 0.2s;
+    /*transform: translateY(0px);*/
 }
 #preparacion{
 	padding-bottom: 0;
-	/*background-color: #3acdff;*/
 }
-#preparacion{
-	text-align: center;	
-	/*padding-bottom: 2em;*/
-}
-#preparacion #texto{
+#preparacion .texto, .portafolio .texto{
 	margin:0 auto 3em auto;
 }
-#preparacion #texto h2, #portafolio #texto h2 {
+#preparacion_content{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#preparacion .texto h2, .portafolio .texto h2 {
 	padding-bottom:.5em; 
-	color: #222a4c;
+	color: #546672;
 	font-size: 2.5em;
 }
-#preparacion #texto div{
+#preparacion .texto div{
 	margin: auto;
     width: 950px;
 }
-#preparacion #texto p, #portafolio #texto p{
+#preparacion .texto p, .portafolio .texto p{
 	font-size: 1.5em;
 	text-align: center;	
+	color: #7e919e;
 }
 #preparacion .caja1{
-	margin-bottom: 1em;
-	margin-top: 1em;
-	width: 32%;
-  	display: inline-block;
+	padding: 2em;
+    background-color: white;
+     margin-bottom: 2em; 
+    /* margin-top: 1em; */
+    /* margin: 1em 1%; */
+    box-shadow: 0 0 7px #C3C3C3;
+    width: 21%;
+    display: inline-block;
 }
 #preparacion .caja1 h3{
 	font-size: 2em;
-	margin: 0.5em 0 
+	font-family: 'raleway', 'Arial', 'sans-serif';
+	margin: 0.5em 0;
+    color: #384047;
 }
 #preparacion .caja1 p{
+	margin: 0;
+	color: #576366;
 	font-size: 1.2em;
 }
 #preparacion .caja1 .imag1{
-	width: 250px;
-	margin: 0;
+	border-radius: 50%;
+    width: 150px;
+    margin: 0;
 }
 #yo{
-	/*padding: 11em 0;*/
-	/*background-color: #58FFC7;*/
 	height: auto;
 }
 #yo #caja1{
@@ -148,16 +233,6 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*.bio:before{
-	background: rgba(0, 0, 0, .34);
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-}*/
 .bio div{
 	margin: 3em 0;
 	padding:0;
@@ -183,19 +258,15 @@ p{
 .menu-bar {
 	display: none;
 }
-.secciones{
-	padding: 3em 0;
-	text-align: center;
-}
 
 @media screen and (max-width: 1200px){
-	#preparacion #texto div, #portafolio #texto div{
+	#preparacion .texto div, .portafolio .texto div{
  		margin: 0;
  		width: 100%;
  	}
 }
 @media screen and (max-width: 955px){
-	#preparacion #texto p,  #portafolio #texto p{
+	#preparacion .texto p,  .portafolio .texto p{
 		width: 100%;
 		text-align: justify;
  	}
@@ -206,6 +277,8 @@ p{
 	}
 	#yo #caja1{
 		width: 96%;
+		display: block;
+		padding: 1.5em;
 	}
 	#yo #caja1 div{
 		display: block;
@@ -216,25 +289,40 @@ p{
 		display: block;
 		margin:2em 0 0 0;
 	}
-	#portafolio .pholio{
-		width: 42%;
+	#yo div h2{
+		font-size: 2.5em;
+		text-align: left;
+		line-height: 50px;
 	}
 	#preparacion .caja1{
 		width: 42%;
   	}
+  	#preparacion .texto{
+  		width: 90%;
+  	}
+  	#preparacion .texto h2{
+		font-size: 2.2em;
+	    line-height: 50px;
+  	}
 	.bio{
 		height: auto;
+		padding: 2em 0;
+	}
+	.bio div #logo-grande img{
+		width: 200px;
+	}
+	.bio div h1{
+		font-size: 2em;
+	}
+	.bio div h2{
+		font-size: 1.2em;
 	}
 }
 @media screen and (max-width: 800px){
 	#preparacion .caja1{
 		display: block;
-		width: 100%;
-	}
-	#portafolio .pholio{
-		display: block;
-		margin: 0 auto 1.5em auto;
-		width: 98%;
-		padding: 0;
+		margin: 0 auto 1em auto;
+		width:90%;
+		max-width: 300px;
 	}
 }
