@@ -447,43 +447,6 @@ code, kbd, samp {
     font-size:20px;
     color:#757575
 }
-/*.sidebar {
-    padding:0 8px;
-    position:relative;
-    margin-top:1em;
-    margin-bottom:1em
-}
-.sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6 {
-    margin-top:0
-}
-.sidebar .items {
-    margin-bottom:20px
-}
-.sidebar .title {
-    background-color:#4285f4;
-    color:#FFF;
-    padding:10px 16px;
-    margin-left:-16px;
-    margin-right:-16px;
-    margin-top:-16px;
-    font-size:18px
-}
-@media only screen and (min-width:900px) {
-    .sidebar {
-        padding:0;
-        margin:1em 12px;
-        -webkit-box-flex:0 0 300px;
-        -moz-box-flex:0 0 300px;
-        -webkit-flex:0 0 300px;
-        -ms-flex:0 0 300px;
-        flex:0 0 300px;
-        -webkit-box-ordinal-group:2;
-        -moz-box-ordinal-group:2;
-        -ms-flex-order:2;
-        -webkit-order:2;
-        order:2
-    }
-}*/
 .svg-icon {
     margin:auto;
     background-repeat:no-repeat no-repeat;
@@ -1666,7 +1629,8 @@ code, kbd, samp {
 }
 .post h2 {
     border-bottom:1px solid #ebebeb;
-    padding-bottom:3px
+    padding-bottom:3px;
+    margin-top: .5em;
 }
 .post-img {
     margin-top:0!important
@@ -1675,8 +1639,8 @@ code, kbd, samp {
     margin-top:0
 }
 .post-main {
-    padding:0 16px 2em;
-    margin-top:20px
+    padding:.5em 1.5em 2em;
+    box-shadow: 0 0 7px #D4D4D4;
 }
 .post-main ul {
     padding-left:40px;
@@ -1727,7 +1691,10 @@ code, kbd, samp {
     line-height:1;
     margin-top:5px
 }
-@media only screen and (min-width:640px) {
+@media only screen and (min-width: 640px){
+    .post-main {
+        padding: 2em 3em 2em;
+    }
     .post-author {
         width: 100%;
     }
@@ -1830,8 +1797,7 @@ code, kbd, samp {
     bottom:24px;
     position:absolute
 }*/
-/*@media only screen and (min-width:640px) {
-    .post-main {
+    /*.post-main {
         padding:0 2em 2em
     }
     .prev-next-row {

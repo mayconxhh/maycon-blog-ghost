@@ -10,20 +10,12 @@
             {{!-- Add img Cover --}}
             <div  class="ps-cover" style="background-image: url({{image}})">              
             </div>
-            {{!-- <img class="ps-cover" src="{{image}}" alt="{{title}}"/></a> --}}
-            {{!-- {{#if image}}<span><a href="{{url}}" class="ps-thumb"><img src="{{image}}" alt="{{title}}"/></a></span>{{/if}} --}}
             {{!-- post Title --}}
             <a class="ps-title" href="{{url}}"><h2>{{title}}</h2></a>
-            {{!-- post author & datetime--}}
-          {{!-- Tags --}}
-          {{!-- {{#if tags}}<div class="ps-tags//editar hidden-on-small-screen">{{#foreach tags}}<a href="{{url}}" class="tags-btn" title={{name}}>{{name}}</a>{{/foreach}}</div>{{/if}} --}}
           {{!-- post content --}}
             <div class="ps-contentText">
               {{!-- Post excerpt --}}
               <div class="ps-byline">
-                {{!-- <div>
-                  By {{#author}}<a href="{{url}}" title="{{name}}" class="author">{{name}}</a>{{/author}}
-                </div> --}}
                 <div>
                   <time class="timestamp//editar" datetime="{{date format='YYYY-MM-DD'}}">{{date published_at timeago="true"}}</time>
                 </div>
