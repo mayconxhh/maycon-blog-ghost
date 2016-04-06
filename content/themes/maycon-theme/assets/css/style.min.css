@@ -1648,6 +1648,7 @@ code, kbd, samp {
     margin-top:0
 }
 .post-main {
+    width: 100%;
     padding:.5em 1.5em 2em;
     box-shadow: 0 0 7px #D4D4D4;
 }
